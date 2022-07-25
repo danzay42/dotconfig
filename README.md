@@ -31,7 +31,10 @@
 - etc:
   ```
   sudo dnf install
-  bpython gparted code
+  bpython 
+  gparted
+  qbittorrent
+  code
   ```
 
 
@@ -76,3 +79,15 @@ Extensions:
 - Removable Drive Menu
 - Clipboard Indicator
 - Status Area Horizontal Spacing
+  
+
+## Etc user config
+```
+sudo usermod -aG dialout $USER
+
+git config --global user.name "Daniil Zaytsev"
+git config --global user.email zdanil34@gmail.com
+```
+<!-- git config --global credential.helper cache
+git config --global credential.helper "cache --timeout=3600" -->
+
