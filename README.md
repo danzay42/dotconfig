@@ -8,17 +8,17 @@
 
 ## ZSH Shell
 - zsh  
-  `sudo dnf install zsh`
-- [oh-my-zsh](https://ohmyz.sh/)
+  `sudo dnf install util-linux-user zsh`
+- [oh-my-zsh](https://ohmyz.sh/)  
+  `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
+  `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
   ```
   ZSH_THEME="simple"
-  plugins=(
-      git
-      zsh-autosuggestions
-      poetry
+  plugins=(git zsh-autosuggestions
+      python poetry
       rust
-      httpie
-      npm
+      httpie node npm
   )
   ```
 
