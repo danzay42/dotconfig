@@ -1,4 +1,4 @@
-# Settings
+# **Settings**
 
 ## Linux power settings
 
@@ -6,10 +6,9 @@
 - [tlp](https://linrunner.de/tlp/index.html)
 - [auto-cpufreq](https://https://github.com/AdnanHodzic/auto-cpufreq)
 
-
-
-## zsh shell
-- zsh `sudo dnf install zsh`
+## ZSH Shell
+- zsh  
+  `sudo dnf install zsh`
 - [oh-my-zsh](https://ohmyz.sh/)
   ```
   ZSH_THEME="simple"
@@ -18,11 +17,13 @@
       zsh-autosuggestions
       poetry
       rust
+      httpie
+      npm
   )
   ```
 
 ## Applications
-- chrome
+- chrome (TODO: add instruction)
 - [vscode](https://code.visualstudio.com/docs/setup/linux)
 - [Port Proton](https://portwine-linux.ru/port-proton-linux/)
   ```
@@ -31,16 +32,39 @@
 - etc:
   ```
   sudo dnf install
+
   bpython 
+  bat
   gparted
   qbittorrent
-  code
+  httpie
+  nodejs
   ```
+  <!-- <hr> -->
+  <!-- <b>bpython</b>: interactive python shell<br> -->
+  <!-- <b>bat</b>: improved cat -->
+  ---
+  **bpython**: interactive python shell  
+  **bat** - improved cat
+
+
+## Python
+
+- poetry (improved pip)
+- mypy (static code analyzer)
+
+```
+pip install
+
+poetry 
+mypy
+```
+
 
 
 ## Fedora 36
 
-### dnf config 
+### DNF 
 add to dnf.conf `sudo nano /etc/dnf/dnf.conf`
 ```
 skip_if_unavailable=True
@@ -50,16 +74,17 @@ defaultyes=True
 ```
 
 
-### drivers
-- add [rpm fusion](https://rpmfusion.org/)
-- install drivers
-    ```
-    sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+### Drivers (TODO: doesn't remember - need to check)
+**Add** [rpm fusion](https://rpmfusion.org/)  
 
-    sudo dnf install lame\* --exclude=lame-devel
+**Install drivers**
+```
+sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 
-    sudo dnf group upgrade --with-optional Multimedia
-    ```
+sudo dnf install lame\* --exclude=lame-devel
+
+sudo dnf group upgrade --with-optional Multimedia
+```
 
 ### [Flatpak](https://flatpak.org/)
 
@@ -82,6 +107,8 @@ Extensions:
   
 
 ## Etc user config
+
+### Git
 ```
 sudo usermod -aG dialout $USER
 
