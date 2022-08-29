@@ -3,12 +3,14 @@
 ## Linux power settings
 
 - powertop
+- s-tui
 - [tlp](https://linrunner.de/tlp/index.html)
-- [auto-cpufreq](https://https://github.com/AdnanHodzic/auto-cpufreq)
+- [auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq)
 
 ## ZSH Shell
 - zsh  
-  `sudo dnf install util-linux-user zsh`
+  Fedora: `sudo dnf install util-linux-user zsh`
+  Debian: `sudo apt install curl zsh`
 - [oh-my-zsh](https://ohmyz.sh/)  
   `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
@@ -46,6 +48,7 @@
   ---
   **bpython**: interactive python shell  
   **bat** - improved cat
+- [Ventoy](https://www.ventoy.net/en/index.html)
 
 
 ## Python
@@ -99,6 +102,7 @@ sudo dnf install gnome-tweaks
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 Extensions:
+- Blur my Shell
 - Vitals
 - AppIndicator and KStatusNotifireItem
 - Removable Drive Menu
@@ -108,10 +112,12 @@ Extensions:
 
 ## Etc user config
 
-### Git
 ```
 sudo usermod -aG dialout $USER
+```
 
+### Git
+```
 git config --global user.name "Daniil Zaytsev"
 git config --global user.email zdanil34@gmail.com
 ```
