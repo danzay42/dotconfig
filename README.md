@@ -63,7 +63,27 @@ poetry
 mypy
 ```
 
+## ARCH
 
+### Packages
+zsh git firefox gparted bpython nodejs httpie bat qbittorrent
+`sudo pacman -S zsh git firefox gparted bpython nodejs httpie bat qbittorrent`
+
+### After Install
+```
+sudo pacman -S gnome-themes-extras 
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+sudo pacman -R gnome-boxes cheese gnome-contacts gnome-maps gnome-photos gnome-music totem gnome-weather epiphany
+```
+
+### AUR Helper (yay)
+```
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+makepkg -si
+```
 
 ## Fedora 36
 
@@ -102,12 +122,10 @@ sudo dnf install gnome-tweaks
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 Extensions:
-- Blur my Shell
 - Vitals
 - AppIndicator and KStatusNotifireItem
 - Removable Drive Menu
 - Clipboard Indicator
-- Status Area Horizontal Spacing
   
 
 ## Etc user config
