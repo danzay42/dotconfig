@@ -69,11 +69,20 @@ mypy
 zsh git firefox gparted bpython nodejs httpie bat qbittorrent
 `sudo pacman -S zsh git firefox gparted bpython nodejs httpie bat qbittorrent`
 
+### bluetooth
+```
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+```
+### sound and microphone
+[Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)
+```
+sudo pacman -S sof-firmware
+```
+
 ### After Install
 ```
 sudo pacman -S gnome-themes-extras 
-sudo systemctl enable bluetooth.service
-sudo systemctl start bluetooth.service
 sudo pacman -R gnome-boxes cheese gnome-contacts gnome-maps gnome-photos gnome-music totem gnome-weather epiphany
 ```
 
@@ -114,6 +123,8 @@ sudo dnf group upgrade --with-optional Multimedia
 ```
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
+vscode flatpack shell configuration
+
 
 ## Gnome
 
