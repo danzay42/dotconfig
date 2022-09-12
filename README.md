@@ -17,13 +17,13 @@
   - rust
 ## Gnome
   Extensions:
-  - Dash to Dock
-  - Vitals
-  - AppIndicator and KStatusNotifireItem
-  - Removable Drive Menu
-  - Clipboard Indicator
+  - [Dash to Dock](https://github.com/micheleg/dash-to-dock)
+  - [Vitals](https://github.com/corecoding/Vitals)
+  - [AppIndicator and KStatusNotifireItem](https://github.com/ubuntu/gnome-shell-extension-appindicator)
+  - [Removable Drive Menu](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
+  - [Clipboard Indicator](https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator)
   ```console
-  gnome-extensions install ...
+  gnome-extensions enable clipboard-indicator@tudmotu.com
   ```
 ## Power controll & and efficiency
   - s-tui
