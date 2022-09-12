@@ -1,0 +1,14 @@
+2a3
+> export PATH=$HOME/.local/bin:$PATH
+11c12
+< ZSH_THEME="robbyrussell"
+---
+> ZSH_THEME="simple"
+73c74,78
+< plugins=(git)
+---
+> plugins=(git zsh-autosuggestions archlinux
+>       python poetry
+>       rust
+>       httpie node npm
+> )
