@@ -17,7 +17,7 @@
   `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
   ```
   ZSH_THEME="simple"
-  plugins=(git zsh-autosuggestions
+  plugins=(git zsh-autosuggestions archlinux
       python poetry
       rust
       httpie node npm
@@ -82,8 +82,9 @@ sudo pacman -S sof-firmware
 
 ### After Install
 ```
-sudo pacman -S gnome-themes-extras 
+sudo pacman -S gnome-themes-extra
 sudo pacman -R gnome-boxes cheese gnome-contacts gnome-maps gnome-photos gnome-music totem gnome-weather epiphany
+yay -S gnome-browser-connector
 ```
 
 ### AUR Helper (yay)
