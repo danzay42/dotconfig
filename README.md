@@ -9,7 +9,7 @@
       `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
     - patch  
       `patch ${HOME}/.zshrc zsh_config_patch.diff`   
-      `patch ${HOME}/.zshrc zsh_config_patch_u.diff`
+      or `patch ${HOME}/.zshrc zsh_config_patch_u.diff`
   - python
     - [poetry](https://python-poetry.org/)  
       `curl -sSL https://install.python-poetry.org | python3 -`
@@ -22,6 +22,9 @@
   - AppIndicator and KStatusNotifireItem
   - Removable Drive Menu
   - Clipboard Indicator
+  ```console
+  gnome-extensions install ...
+  ```
 ## Power controll & and efficiency
   - s-tui
   - [tlp & tlp-rdw](https://linrunner.de/tlp/index.html)
@@ -101,4 +104,32 @@
   git config --global credential.helper "cache --timeout=3600" -->
 
 # **Configs**
+## Common
   `sudo usermod -aG dialout $USER`
+## Locale
+  ```console
+  sudo echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
+  sudo locale-gen
+  ```
+## Gnome
+  ```console
+  gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+  gsettings set org.gnome.desktop.interface enable-hot-corners false
+  
+  gsettings set org.gnome.desktop.session idle-delay 1200
+  gsettings set org.gnome.settings-daemon.plugins.power power-button-action "interactive"
+  gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 1200
+  gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 1200
+  
+  shortcut_gset=org.gnome.settings-daemon.plugins.media-keys
+  shortcut_custom=/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/
+  
+  gsettings set ${shortcut_gset}.custom-keybinding:${custom_shortcut} binding '<Super>t'
+  gsettings set ${shortcut_gset}.custom-keybinding:${custom_shortcut} name 'Terminal'
+  gsettings set ${shortcut_gset}.custom-keybinding:${custom_shortcut} command 'gnome-terminal'
+  gsettings set ${shortcut_gset} custom-keybindings "['${shortcut_custom}']"
+  
+  gsettings set org.gnome.desktop.input-sources per-window true
+  gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ru')]"
+
+  ```
