@@ -24,6 +24,10 @@
   - [Clipboard Indicator](https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator)
   ```console
   gnome-extensions enable clipboard-indicator@tudmotu.com
+  gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+  gnome-extensions enable Vitals@CoreCoding.com
+  gnome-extensions enable dash-to-dock@micxgx.gmail.com
+  gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
   ```
 ## Power controll & and efficiency
   - s-tui
