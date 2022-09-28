@@ -65,6 +65,7 @@
     `yay -S nvidia-470xx-dkms nvidia-470xx-settings nvidia-470xx-utils`
     
     modify /etc/mkinitcpio.conf:  `MODULES=(btrfs nvidia nvidia_modeset nvidia_uvm nvidia_drm)`  
+    and exec:  `mkinitcpio -p linux-lts` or `mkinitcpio -p linux`
     modify /etc/gdm/custom.conf:  `WaylandEnable=true`  
     add wayland gdm login:  `sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules`
     
