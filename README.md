@@ -63,6 +63,12 @@
     `sudo pacman -S nvidia` or `nvidia-lts` and etc...
   - geforce gtx 780  
     `yay -S nvidia-470xx-dkms nvidia-470xx-settings nvidia-470xx-utils`
+    
+    modify /etc/mkinitcpio.conf:  `MODULES=(btrfs nvidia nvidia_modeset nvidia_uvm nvidia_drm)`  
+    modify /etc/gdm/custom.conf:  `WaylandEnable=true`  
+    add wayland gdm login:  `sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules`
+    
+    
 ### Troubleshooting
 - bluetooth  
   ```console
@@ -114,6 +120,10 @@
   ```console
   sudo echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
   sudo locale-gen
+  ```
+## Fonts
+  ```console
+  sudo pacman -S noto-fonts
   ```
 ## Gnome
   ```console
