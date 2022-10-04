@@ -1,11 +1,13 @@
 # **Soft**
 ## Base
-  - zsh git bat bpython firefox gparted qbittorrent nodejs httpie  
-  - [oh-my-zsh](https://ohmyz.sh/)  
+  - firefox gparted qbittorrent 
+  - git bat tmux tree htop powertop bpython 
+  - zsh zsh-autosuggestions  
+    - [oh-my-zsh](https://ohmyz.sh/)  
         Fedora zsh: `sudo dnf install util-linux-user`  
         Debian zsh: `sudo apt install curl`  
         `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
+    - * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
       `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
     - patch  
       `patch ${HOME}/.zshrc zsh_config_patch.diff`   
@@ -15,6 +17,7 @@
       `curl -sSL https://install.python-poetry.org | python3 -`
     - mypy
   - rust
+  - nodejs httpie
 ## Gnome
   Extensions:
   - [Dash to Dock](https://github.com/micheleg/dash-to-dock)
