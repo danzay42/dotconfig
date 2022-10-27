@@ -1,14 +1,25 @@
 # **Soft**
 ## Base
   - firefox gparted qbittorrent 
-  - git bat tmux tree htop powertop bpython 
-  - zsh zsh-autosuggestions  
+  - git bat tmux tree htop powertop bpython exa alacritty 
+  - rust utils: 
+    - [starship prompt](https://starship.rs/)
+    - bat <- cat
+    - exa <- ls
+    - grep <- ripgrep
+    - fd <- find
+    - tldr | info <- man
+    - tokei (program to estemate programm languages is folder)
+    - htop <- top <- <u>procs</u>  <- ps
+  - zsh zsh-autosuggestions zsh-syntax-highlighting 
     - [oh-my-zsh](https://ohmyz.sh/)  
         Fedora zsh: `sudo dnf install util-linux-user`  
         Debian zsh: `sudo apt install curl`  
         `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
       `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+    - * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)  
+      `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
     - patch  
       `patch ${HOME}/.zshrc zsh_config_patch.diff`   
       or `patch ${HOME}/.zshrc zsh_config_patch_u.diff`
@@ -18,6 +29,9 @@
     - mypy
   - rust
   - nodejs httpie
+## Flatpack
+  - Google Chrome
+  - Osidian (Markdown editor)
 ## Gnome
   Extensions:
   - [Dash to Dock](https://github.com/micheleg/dash-to-dock)
@@ -71,8 +85,6 @@
     and exec:  `mkinitcpio -p linux-lts` or `mkinitcpio -p linux`
     modify /etc/gdm/custom.conf:  `WaylandEnable=true`  
     add wayland gdm login:  `sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules`
-    
-    
 ### Troubleshooting
 - bluetooth  
   ```console
@@ -82,6 +94,10 @@
 - sound and microphone  
   [Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)  
   `sudo pacman -S sof-firmware`
+- fonts
+  ```console
+  sudo pacman -S noto-fonts
+  ```
 ## Fedora
 ### DNF 
   add to dnf.conf `sudo nano /etc/dnf/dnf.conf`
@@ -118,16 +134,12 @@
   git config --global credential.helper "cache --timeout=3600" -->
 
 # **Configs**
-## Common
+## Misc usb visibility 
   `sudo usermod -aG dialout $USER`
 ## Locale
   ```console
   sudo echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
   sudo locale-gen
-  ```
-## Fonts
-  ```console
-  sudo pacman -S noto-fonts
   ```
 ## Gnome
   ```console
@@ -151,3 +163,4 @@
   gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ru')]"
 
   ```
+
