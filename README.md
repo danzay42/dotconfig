@@ -1,8 +1,8 @@
 # **Soft**
 ## Base
   - firefox gparted qbittorrent 
-  - git bat tmux tree htop powertop bpython exa alacritty 
-  - rust utils: 
+  - alacritty kitty git tmux tree bpython httpie curl  htop powertop nvtop procs  
+  linux improved utils: 
     - [starship prompt](https://starship.rs/)
     - bat <- cat
     - exa <- ls
@@ -10,7 +10,7 @@
     - fd <- find
     - tldr | info <- man
     - tokei (program to estemate programm languages is folder)
-    - htop <- top <- <u>procs</u>  <- ps
+    - htop <- top <- <u>procs</u> <- ps
   - zsh zsh-autosuggestions zsh-syntax-highlighting 
     - [oh-my-zsh](https://ohmyz.sh/)  
         Fedora zsh: `sudo dnf install util-linux-user`  
@@ -24,7 +24,7 @@
       `patch ${HOME}/.zshrc zsh_config_patch.diff`   
       or `patch ${HOME}/.zshrc zsh_config_patch_u.diff`
   - python
-    - [poetry](https://python-poetry.org/)  
+    - [poetry](https://python-poetry.org/):
       `curl -sSL https://install.python-poetry.org | python3 -`
     - mypy
   - rust
