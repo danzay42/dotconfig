@@ -1,7 +1,8 @@
 # **Soft**
 ## Base
   - firefox gparted qbittorrent 
-  - alacritty kitty git tmux tree bpython httpie curl  htop powertop nvtop procs  
+  - nodejs python rust  
+  - alacritty kitty git tmux tree bpython httpie curl htop powertop nvtop procs s-tui pass
   linux improved utils: 
     - [starship prompt](https://starship.rs/)
     - bat <- cat
@@ -27,8 +28,6 @@
     - [poetry](https://python-poetry.org/):
       `curl -sSL https://install.python-poetry.org | python3 -`
     - mypy
-  - rust
-  - nodejs httpie
 ## Flatpack
   - Google Chrome
   - Osidian (Markdown editor)
