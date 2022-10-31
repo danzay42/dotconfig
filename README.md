@@ -27,7 +27,7 @@
   - python
     - [poetry](https://python-poetry.org/):
       `curl -sSL https://install.python-poetry.org | python3 -`
-    - mypy
+    - mypy autopep8
 ## Flatpack
   - Google Chrome
   - Osidian (Markdown editor)
