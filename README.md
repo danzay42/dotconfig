@@ -2,7 +2,7 @@
 ## Base
   - firefox gparted qbittorrent 
   - nodejs python rust  
-  - alacritty kitty git tmux tree bpython httpie curl htop powertop nvtop procs s-tui pass starship
+  - alacritty kitty git tmux tree bpython httpie curl wget htop powertop nvtop procs s-tui pass starship
    linux improved utils: 
     - [starship](https://starship.rs/) prompt [git](https://github.com/starship/starship)
     - bat <- cat
