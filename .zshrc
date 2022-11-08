@@ -6,7 +6,7 @@ setopt autocd
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/dz/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -15,6 +15,7 @@ compinit
 
 # Custom configs
 export PATH=$HOME/.local/bin:$PATH
+export EDITOR='lvim'
 
 eval "$(starship init zsh)"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -27,4 +28,12 @@ alias cat=bat
 alias l='ls -lah'
 alias ll='ls -lh'
 alias gst='git status'
-alias vi=nvim
+alias df='df -h'
+alias du='du -sh'
+alias tree='tree -C --dirsfirst'
+alias v=$EDITOR
+
+alias config_zshrc='$EDITOR $HOME/.zshrc'
+alias config_neovim='$EDITOR $HOME/.config/nvim/init.vim'
+alias config_readme='$EDITOR $HOME/Documents/dotconfig/README.md'
+alias lvim_update='lvim +LvimUpdate +q'

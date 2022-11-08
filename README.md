@@ -65,7 +65,7 @@
   gnome-extensions enable dash-to-dock@micxgx.gmail.com
   gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
   ```
-## Power controll & and efficiency
+## Power control & and efficiency
   - s-tui
   - [tlp & tlp-rdw](https://linrunner.de/tlp/index.html)
   - [auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq)
