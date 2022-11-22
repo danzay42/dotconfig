@@ -15,7 +15,7 @@ compinit
 
 # Custom configs
 export PATH=$HOME/.local/bin:$PATH
-export EDITOR='lvim'
+export EDITOR='nvim'
 
 eval "$(starship init zsh)"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -36,4 +36,3 @@ alias v=$EDITOR
 alias config_zshrc='$EDITOR $HOME/.zshrc'
 alias config_neovim='$EDITOR $HOME/.config/nvim/init.vim'
 alias config_readme='$EDITOR $HOME/Documents/dotconfig/README.md'
-alias lvim_update='lvim +LvimUpdate +q'

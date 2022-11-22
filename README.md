@@ -13,30 +13,20 @@
     - tokei (program to estemate programm languages is folder)
     - htop <- top <- <u>procs</u> <- ps
   - zsh zsh-autosuggestions zsh-syntax-highlighting 
-    - [oh-my-zsh](https://ohmyz.sh/)  
-        Fedora zsh: `sudo dnf install util-linux-user`  
-        Debian zsh: `sudo apt install curl`  
-        `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-    - * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
-      `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-    - * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)  
-      `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-    - patch  
-      `patch ${HOME}/.zshrc zsh_config_patch.diff`   
-      or `patch ${HOME}/.zshrc zsh_config_patch_u.diff`
   - python
     - [poetry](https://python-poetry.org/):
       `curl -sSL https://install.python-poetry.org | python3 -`
     - mypy autopep8
-  - nvim  
-    - lsp servers
-      - rust-analyzer
-      - pyright  
-    - vim [plugins](https://github.com/junegunn/vim-plug)  
-      ```console
-      sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-      ```
+  - nvim 
+    - [AstroNvim](https://astronvim.github.io/)
+    <!-- - lsp servers -->
+    <!--   - rust-analyzer -->
+    <!--   - pyright   -->
+    <!-- - vim [plugins](https://github.com/junegunn/vim-plug)   -->
+    <!--   ```console -->
+    <!--   sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \ -->
+    <!--    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' -->
+    <!--   ``` -->
 	- Troubleshooting  
 	  on Wayland install wl-clipboard
   - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)  
