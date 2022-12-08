@@ -11,7 +11,14 @@
     - fd <- find
     - tldr | info <- man
     - tokei (program to estemate programm languages is folder)
-    - htop <- top <- <u>procs</u> <- ps
+    - btm(bottom) | htop <- top <- <u>procs</u> <- ps
+    - atuin (best serch for command history)
+    - difft (difftastic) <- diff
+    - dog (DNS lookup utility)
+    - dust <- du
+    - lfs <- df
+    - eva (calculator) <- _
+    - hyperfine (cli benchmarking tool) <- time
   - zsh zsh-autosuggestions zsh-syntax-highlighting 
   - python
     - [poetry](https://python-poetry.org/):
@@ -155,7 +162,7 @@
   gsettings set org.gnome.desktop.interface color-scheme prefer-dark
   gsettings set org.gnome.desktop.interface enable-hot-corners false
   
-  gsettings set org.gnome.desktop.session idle-delay 1200
+  gsettings set org.gnome.desktop.session idle-delay 1800
   gsettings set org.gnome.settings-daemon.plugins.power power-button-action "interactive"
   gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 1200
   gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 1200
@@ -163,9 +170,9 @@
   shortcut_gset=org.gnome.settings-daemon.plugins.media-keys
   shortcut_custom=/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/
   
-  gsettings set ${shortcut_gset}.custom-keybinding:${custom_shortcut} binding '<Super>t'
-  gsettings set ${shortcut_gset}.custom-keybinding:${custom_shortcut} name 'Terminal'
-  gsettings set ${shortcut_gset}.custom-keybinding:${custom_shortcut} command 'gnome-terminal'
+  gsettings set ${shortcut_gset}.custom-keybinding:${shortcut_custom} binding '<Super>Return'
+  gsettings set ${shortcut_gset}.custom-keybinding:${shortcut_custom} name 'Terminal'
+  gsettings set ${shortcut_gset}.custom-keybinding:${shortcut_custom} command 'alacritty'
   gsettings set ${shortcut_gset} custom-keybindings "['${shortcut_custom}']"
   
   gsettings set org.gnome.desktop.input-sources per-window true

@@ -23,10 +23,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 alias upgrade='sudo pacman -Syu ; echo Done - Press enter to AUR update or C-c to exit ; read _ ; yay -Syu ; echo Done - Press enter to exit; read _' 
 alias py=python3
-alias ls=exa
+# alias ls=exa
 alias cat=bat
-alias l='ls -lah'
-alias ll='ls -lh'
+alias l='exa -lah'
+# alias ll='exa -lh'
 alias gst='git status'
 alias df='df -h'
 alias du='du -sh'
