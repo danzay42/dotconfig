@@ -19,10 +19,12 @@
     - lfs <- df
     - eva (calculator) <- _
     - hyperfine (cli benchmarking tool) <- time
+    - fzf (tool for eazy choose feom list of given data)
   - zsh zsh-autosuggestions zsh-syntax-highlighting 
   - python
     - [poetry](https://python-poetry.org/):
-      `curl -sSL https://install.python-poetry.org | python3 -`
+      `curl -sSL https://install.python-poetry.org | python3 -`  
+      `poetry config virtualenvs.in-project true`
     - mypy autopep8
   - nvim 
     - [AstroNvim](https://astronvim.github.io/)
@@ -44,6 +46,9 @@
 	cd ../ 
 	rm -rf nerd-fonts
 	```
+	- polybar | xmobar
+	- rofi | dmenu
+  - awesome | i3 | leftwm
 	
 ## Flatpack
   - Google Chrome
@@ -78,6 +83,9 @@
 
 # **After install**
 ## ArchLinux
+### After Install
+1. Edit pacman config file (/etc/pacman.conf), that contains <u>Color</u> config, easter egg <u>ILoveCandy</u> or parallel downolad. It's also contains instructions to gpg-key settings and initializations.
+2. 
 ### Gnome
   ```console
   sudo pacman -S gnome-themes-extra
@@ -136,10 +144,6 @@
   sudo dnf install lame\* --exclude=lame-devel
   sudo dnf group upgrade --with-optional Multimedia
   ```
-### [Flatpak](https://flatpak.org/)
-  ```console
-  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-  ```
 
 # **Git**
   ```console
@@ -179,4 +183,10 @@
   gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ru')]"
 
   ```
+## [Flatpak](https://flatpak.org/)
+  Clear cache
+  ```console
+  flatpak uninstall --unused
+  ```
+
 

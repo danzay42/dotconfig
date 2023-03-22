@@ -15,6 +15,7 @@ compinit
 
 # Custom configs
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 export EDITOR='nvim'
 
 eval "$(starship init zsh)"
