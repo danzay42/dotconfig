@@ -32,7 +32,7 @@ alias gst='git status'
 alias df='df -h'
 alias du='du -sh'
 alias tree='tree -C --dirsfirst'
-alias v=$EDITOR
+alias e=$EDITOR
 
 alias config_zshrc='$EDITOR $HOME/.zshrc'
 alias config_neovim='$EDITOR $HOME/.config/nvim/init.vim'

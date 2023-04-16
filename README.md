@@ -6,7 +6,7 @@
    linux improved utils: 
     - [starship](https://starship.rs/) prompt [git](https://github.com/starship/starship)
     - bat <- cat
-    - exa <- ls
+    - lsd | exa <- ls
     - grep <- ripgrep
     - fd <- find
     - tldr | info <- man
@@ -20,6 +20,11 @@
     - eva (calculator) <- _
     - hyperfine (cli benchmarking tool) <- time
     - fzf (tool for eazy choose feom list of given data)
+    - zoxide <- cd
+    - entr (event notify test runner)
+    - mc (midnight commander)
+    - cmp, diff, tput
+    - lazygit
   - zsh zsh-autosuggestions zsh-syntax-highlighting 
   - python
     - [poetry](https://python-poetry.org/):
@@ -46,13 +51,14 @@
 	cd ../ 
 	rm -rf nerd-fonts
 	```
-	- polybar | xmobar
-	- rofi | dmenu
-  - awesome | i3 | leftwm
-	
+	- polybar | xmobar?
+	- rofi | dmenu 
+  - awesome | i3 | leftw? (tile wm)
+	- nitrogen | feh (wallpaper app)
+	- flameshot (screenshot app)
 ## Flatpack
   - Google Chrome
-  - Osidian (Markdown editor)
+  - Osidian
 ## Gnome
   Extensions:
   - [Dash to Dock](https://github.com/micheleg/dash-to-dock)
