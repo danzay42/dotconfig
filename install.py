@@ -5,6 +5,7 @@ from pathlib import Path
 import subprocess
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
+__version__ = (0, 0, 21)
 
 PACMAN = ["pacman", "apt", "dnf"]
 PACKAGES = [
