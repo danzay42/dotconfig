@@ -1,17 +1,18 @@
 # **Soft**
 ## Base
-  - firefox gparted qbittorrent 
-  - nodejs python rust  
-  - alacritty kitty git tmux tree bpython httpie curl wget htop powertop nvtop procs s-tui pass starship
+  - firefox gparted qbittorrent tree s-tui pass
    linux improved utils: 
+    - httpie <- curl <- wget
+    - alacritty | kitty
+    - ipython | bpython || irust | evcxr_jupyter | cargo-info
     - [starship](https://starship.rs/) prompt [git](https://github.com/starship/starship)
     - bat <- cat
     - lsd | exa <- ls
     - grep <- ripgrep
     - fd <- find
-    - tldr | info <- man
+    - tldr | batman <- info <- man
     - tokei (program to estemate programm languages is folder)
-    - btm(bottom) | htop <- top <- <u>procs</u> <- ps
+    - btm(bottom) | htop <- top <- mprocs | <u>procs</u> <- ps || powertop | nvtop
     - atuin (best serch for command history)
     - difft (difftastic) <- diff
     - dog (DNS lookup utility)
@@ -24,14 +25,23 @@
     - entr (event notify test runner)
     - mc (midnight commander)
     - cmp, diff, tput
-    - lazygit
+    - lazygit | gitui <- git
+    - bat-extras (batgrep, batman, batpipe, batwatch, batdiff, prettybat)
+    - zellif <- tmux 
+
   - zsh zsh-autosuggestions zsh-syntax-highlighting 
   - python
     - [poetry](https://python-poetry.org/):
       `curl -sSL https://install.python-poetry.org | python3 -`  
       `poetry config virtualenvs.in-project true`
     - mypy autopep8
-  - nvim 
+  - nvim
+    - Plugins & utils:
+      - LSP
+      - tree-sitter (быстрый и правильный способо подстветки кода)
+      - Tagbar (навигация внутри файла)
+      - NERDTree
+      - Telescope (use: ripgrep, fzf)
     - [AstroNvim](https://astronvim.github.io/)
     <!-- - lsp servers -->
     <!--   - rust-analyzer -->
