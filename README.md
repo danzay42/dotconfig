@@ -166,6 +166,8 @@
   git config --global user.name "Daniil Zaytsev"
   git config --global user.email zdanil34@gmail.com
   ```
+  core.autocrlf=false
+  credential.helper=cache
   <!-- git config --global credential.helper cache
   git config --global credential.helper "cache --timeout=3600" -->
 
