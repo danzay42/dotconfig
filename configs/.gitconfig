@@ -3,5 +3,5 @@
 	email = zdanil34@gmail.com
 [credential]
 	helper = cache # --timeout=3600
-[core]
-	autocrlf = true
+; [core]
+; 	autocrlf = false
