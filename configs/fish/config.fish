@@ -53,6 +53,7 @@ if status is-interactive
     # Development
     set -x GOPATH $HOME/.go
     fish_add_path -U $GOPATH/bin
+    set -x JAVA_HOME "/usr/lib/jvm/default"
 
     #
     alias ll="exa -lha --git --links --color=always --group-directories-first"
