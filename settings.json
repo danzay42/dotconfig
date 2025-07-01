@@ -1,0 +1,11 @@
+{
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.profiles.linux": {
+    "fish": {
+      "path": "/app/bin/host-spawn",
+      "args": ["fish"],
+      "icon": "terminal-bash",
+      "overrideName": true
+    }
+  }
+}
